@@ -9,14 +9,16 @@ public class ParkingSpot extends BaseModel {
     private VehicleType vehicleType;
     private ParkingSpotStatus parkingSpotStatus;
     private Vehicle vehicle;
+    private ParkingSpotType parkingSpotType;
 
     public ParkingSpot() {}
 
-    public ParkingSpot(int number, VehicleType vehicleType, ParkingSpotStatus parkingSpotStatus, Vehicle vehicle) {
+    public ParkingSpot(int number, VehicleType vehicleType, ParkingSpotStatus parkingSpotStatus, Vehicle vehicle, ParkingSpotType parkingSpotType) {
         this.number = number;
         this.vehicleType = vehicleType;
         this.parkingSpotStatus = parkingSpotStatus;
         this.vehicle = vehicle;
+        this.parkingSpotType = parkingSpotType;
     }
 
     public int getNumber() {
@@ -49,5 +51,13 @@ public class ParkingSpot extends BaseModel {
 
     public void setVehicle(Vehicle vehicle) {
         this.vehicle = vehicle;
+    }
+
+    public ParkingSpotType getParkingSpotType() {
+        return parkingSpotType;
+    }
+
+    public void setParkingSpotType(ParkingSpotType parkingSpotType) {
+        this.parkingSpotType = parkingSpotType;
     }
 }

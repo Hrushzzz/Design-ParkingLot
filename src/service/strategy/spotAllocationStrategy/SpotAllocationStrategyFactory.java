@@ -7,7 +7,7 @@ public class SpotAllocationStrategyFactory {
         return switch (allocationStrategy) {
             case LINEAR -> new LinearParkingSpotAllocationStrategy();
             case LUXURY -> new LuxuryParkingSpotAllocationStrategy();
-            case NEAR_EXIT -> new NearExitParkingSpotAllocationStrategy();
+            case ELECTRICAL -> new ElectricalParkingSpotAllocationStrategy();
         };
     }
 }

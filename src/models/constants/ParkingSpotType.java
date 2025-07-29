@@ -4,5 +4,6 @@ public enum ParkingSpotType {
     LUXE,
     NORMAL,
     EV,
-    LONG_TERM
+    LONG_TERM,
+    EXPRESS_TERM,
 }
